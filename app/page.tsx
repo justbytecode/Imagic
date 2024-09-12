@@ -96,10 +96,11 @@ export default function AIImageEditorLanding() {
                 transition={{ duration: 0.8 }}
               >
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
-                  Transform Your Balance in Solana & Ethereum
+                Transform Your Images with AI
                 </h1>
                 <p className="text-xl mb-8 text-gray-300">
-                  Add Your Balance in Solana & Ethereum Crypto Wallet. 
+                Remove objects and backgrounds with ease using our cutting-edge AI technology.
+
                 </p>
                 <Link href={"/dashboard"}>
                 <Button className="bg-purple-600 hover:bg-purple-700 text-white text-lg px-8 py-3 rounded-full">
