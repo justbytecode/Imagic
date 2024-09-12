@@ -36,7 +36,7 @@ const Sidebar = () => {
                 <BrainCircuit />
               </motion.div>
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500">
-                NiceHash
+                Image.AI
               </span>
             </motion.div>
         </Link>
