@@ -70,7 +70,7 @@ export default function AIImageEditorLanding() {
                 <BrainCircuit />
               </motion.div>
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-yellow-700">
-                NiceHash
+                ImagiKa.Ai
               </span>
             </motion.div>
           </Link>
