@@ -22,7 +22,7 @@ const ImageDetails = async ({ params: { id } }: SearchParamProps) => {
       <section className="mt-5 flex flex-wrap gap-4">
         <div className="p-14-medium md:p-16-medium flex gap-2">
           <p className="text-dark-600">Transformation:</p>
-          <p className=" capitalize text-purple-400">
+          <p className="capitalize  text-purple-400">
             {image.transformationType}
           </p>
         </div>
@@ -59,7 +59,7 @@ const ImageDetails = async ({ params: { id } }: SearchParamProps) => {
       </section>
 
       <section className="mt-10 border-t border-dark-400/15">
-        <div className="transformation-grid">
+        <div className="grid h-fit min-h-[200px] grid-cols-1 gap-5 py-8 md:grid-cols-2">
           {/* MEDIA UPLOADER */}
           <div className="flex flex-col gap-4">
             <h3 className="h3-bold text-dark-600">Original</h3>
@@ -69,7 +69,7 @@ const ImageDetails = async ({ params: { id } }: SearchParamProps) => {
               height={getImageSize(image.transformationType, image, "height")}
               src={image.secureURL}
               alt="image"
-              className="transformation-original_image"
+              className="h-fit min-h-72 w-full rounded-[10px] border border-dashed bg-purple-100/20 object-cover p-2"
             />
           </div>
 
@@ -86,7 +86,7 @@ const ImageDetails = async ({ params: { id } }: SearchParamProps) => {
 
         {userId === image.author.clerkId && (
           <div className="mt-4 space-y-4">
-            <Button asChild type="button" className="submit-button capitalize">
+            <Button asChild type="button" className="bg-purple-gradient bg-cover rounded-full py-4 px-6 p-16-semibold h-[50px] w-full md:h-[54px] capitalize">
               <Link href={`/transformations/${image._id}/update`}>
                 Update Image
               </Link>
